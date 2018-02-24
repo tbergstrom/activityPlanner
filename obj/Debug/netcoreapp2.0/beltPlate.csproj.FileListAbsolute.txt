@@ -1,0 +1,10 @@
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\bin\Debug\netcoreapp2.0\beltPlate.deps.json
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\bin\Debug\netcoreapp2.0\beltPlate.runtimeconfig.json
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\bin\Debug\netcoreapp2.0\beltPlate.runtimeconfig.dev.json
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\bin\Debug\netcoreapp2.0\beltPlate.dll
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\bin\Debug\netcoreapp2.0\beltPlate.pdb
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\obj\Debug\netcoreapp2.0\beltPlate.csproj.CoreCompileInputs.cache
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\obj\Debug\netcoreapp2.0\beltPlate.AssemblyInfoInputs.cache
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\obj\Debug\netcoreapp2.0\beltPlate.AssemblyInfo.cs
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\obj\Debug\netcoreapp2.0\beltPlate.dll
+C:\Users\tberg\Dropbox\CD\csharp\belt\beltPlate\obj\Debug\netcoreapp2.0\beltPlate.pdb

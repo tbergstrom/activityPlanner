@@ -1,0 +1,33 @@
+@model List<beltPlate.Models.Activity>
+<link rel="stylesheet" href="~/css/site.css">
+<table class="activityTable">
+    <tr>
+        <th>Activity</th>
+        <th>Date and Time</th>
+        <th>Duration</th>
+        <th>Event Coordinator</th>
+        <th>Number of Participants</th>
+        <th>Actions</th>
+    </tr>
+        @foreach(var activity in Model.OrderBy(act => act.dateOfActivity))
+        {
+            <tr>
+                <td><a asp-controller="Activity" asp-action="ViewActivity" asp-route-activityId="@activity.activityId">@activity.title</a></td>
+                <td>@activity.dateOfActivity.ToString("dd MMM yyy") at @activity.timeOfActivity.ToString("hh:mm")
+                <td>@activity.duration @ViewBag.Inc</td>
+                @if(activity.rsvps[0] != null)
+                {
+                    <td>@activity.rsvps[0].User.firstName</td>
+                }
+                else{
+                    <td>0</td>
+                }
+                <td>@activity.rsvps.Count</td>
+                <td>
+                    <span><a asp-controller="Activity" asp-action="UnRsvpToActivity" asp-route-activityId="@activity.activityId">UN-Rsvp</a></span>
+                    <span><a asp-controller="Activity" asp-action="RsvpToActivity" asp-route-activityId="@activity.activityId">JOIN</a></span>
+                    <span><a asp-controller="Activity" asp-action="DeleteActivity" asp-route-activityId="@activity.activityId">Delete</a></span>
+                </td>
+            </tr>
+        }
+</table>

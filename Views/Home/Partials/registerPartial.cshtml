@@ -1,0 +1,25 @@
+@model beltPlate.Models.RegisterViewModel
+<div class="formWrap">
+        <fieldset>
+            <legend>Register</legend>
+            <form asp-controller="Home" asp-action="Register" method="post">
+                <p><label asp-for="firstName">First Name</label></p>
+                <p><input asp-for="firstName"/></p>
+                <span asp-validation-for="firstName"></span>
+                <p><label asp-for="lastName">Last name</label></p>
+                <p><input asp-for="lastName"/></p>
+                <span asp-validation-for="lastName"></span>
+                <p><label asp-for="email">Email</label></p>
+                <p><input asp-for="email"/></p>
+                <span asp-validation-for="email"></span>
+                <p><label asp-for="password">Password</label></p>
+                <p><input asp-for="password"/></p>
+                <span asp-validation-for="password"></span>
+                <p><label asp-for="confirmPassword">Confirm Password</label></p>
+                <p><input asp-for="confirmPassword"/></p>
+                <span asp-validation-for="confirmPassword"></span>
+                <input class="btn btn-pop" type="submit" name="submit" value="Register">
+            </form>
+        </fieldset>
+    </div>
+    <div class="formWrap">

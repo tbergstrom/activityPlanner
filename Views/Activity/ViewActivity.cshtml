@@ -1,0 +1,23 @@
+@model beltPlate.Models.Activity
+@Html.Partial("./Partials/headerPartial")
+<h2>@Model.title</h2>
+<h4>@Model.dateOfActivity.ToString("dd MMM yyyy") at @Model.timeOfActivity.ToString("hh:mm tt")</h4>
+<h4>Event Coordinator: @Model.userId</h4>
+<h4>Description</h4>
+<p>@Model.description</p>
+<h4>Participants</h4>
+<ul>
+    @{
+        @if(Model.rsvps.Count > 0)
+        {
+            @foreach(var guest in Model.rsvps)
+            {
+                if(guest.User != null)
+                {
+                    <li>@guest.User.firstName</li>
+                }           
+            }
+        }     
+    }
+</ul>
+<a asp-controller="Activity" asp-action="RsvpToActivity" asp-route-activityId="@Model.activityId">JOIN!</a>

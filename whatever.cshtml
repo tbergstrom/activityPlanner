@@ -1,0 +1,20 @@
+[HttpPost]
+    [Route("rsvpToWedding")]
+    public IActionResult rsvpToWedding(int WeddingId)
+    {
+        System.Console.WriteLine(":D");
+
+            RSVP addRsvp = new RSVP
+            {
+                UserId = (int)HttpContext.Session.GetInt32("id"),
+                GuestWeddingId = WeddingId
+            };
+
+            _context.RSVPS.Add(addRsvp);
+            _context.SaveChanges();
+
+
+
+
+        return RedirectToAction("Dashboard");
+    }

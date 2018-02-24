@@ -1,0 +1,13 @@
+1.  Why doesn't my guest count reflect the number of rsvps for each activity in my tablePartial?
+2.  Why does my JOIN link throw an error when going back to "Success"? Do I need to update allActivities and pass them back?
+3.  Make it so you can only JOIN an activity if you've not joined already.
+4.  fix the welcome message on the header, the name disappears on some views.
+5.  Get the event coordinator name to appear.
+
+
+no validation to prevent creating events with past date
+cannot delete activities that have been created
+duration unit (minutes/hours/days) is missing
+can join from individual page, but no functionality to join/leave/delete from dashboard
+no functionality to leave activity
+no validation to prevent joining conflicting events

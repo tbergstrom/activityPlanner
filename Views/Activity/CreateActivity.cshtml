@@ -1,0 +1,33 @@
+@model beltPlate.Models.ActivityViewModel
+@Html.Partial("./Partials/headerPartial")
+<link rel="stylesheet" href="~/css/site.css">
+<h3>Create an Activity!</h3>
+<div class="formWrap">
+    <fieldset>
+        <form asp-controller="Activity" asp-action="AddActivity" method="POST">
+            <p><label asp-for="title"></label></p>
+            <p><input asp-for="title"/></p>
+            <span asp-validation-for="title"></span>
+            <p><label asp-for="timeOfActivity"></label></p>
+            <p><input type="time" asp-for="timeOfActivity"/></p>
+            <span asp-validation-for="timeOfActivity"></span>
+            <p><label asp-for="dateOfActivity"></label></p>
+            <p><input type="date" asp-for="dateOfActivity"/></p>
+            <span asp-validation-for="dateOfActivity"></span>
+            <p><label asp-for="duration"></label></p>
+            <span><input asp-for="duration"/></span>
+                    
+            <span><select asp-for="timeIncrement"/>
+                <option>Mins</option>
+                <option>Hrs</option>
+                <option>Days</option>     
+            </select></span>
+            <p><span asp-validation-for="duration"></span></p>
+            <span asp-validation-for="timeIncrement"></span>
+            <p><label asp-for="description"></label></p>
+            <p><textarea asp-for="description"/></textarea></p>
+            <span asp-validation-for="description"></span>
+            <p><input type="submit" value="Create"></p>        
+        </form>
+    </fieldset>
+</div>
